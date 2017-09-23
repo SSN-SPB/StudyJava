@@ -158,6 +158,9 @@ public class Calculator {
             if(charArrayResult[z1] == '4'){
                 stringArrayResult[z1] = new String[]{"  Z  Z ", "  Z  Z ", "  Z  Z ", "  ZZZZ ", "     Z ", "     Z ","     Z "};
             }
+            if(charArrayResult[z1] == '5'){
+                stringArrayResult[z1] = new String[]{" ZZZZ  ", " Z     ", " Z     ", " ZZZZ  ", "    Z  ", "    Z  "," ZZZZ  "};
+            }
         }
         System.out.println("Print out final result in pseudographic mode:\n"/* + Arrays.deepToString(stringArrayResult*/);
 
