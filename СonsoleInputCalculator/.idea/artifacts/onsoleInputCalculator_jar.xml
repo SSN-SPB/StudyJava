@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="СonsoleInputCalculator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/onsoleInputCalculator_jar</output-path>
+    <root id="archive" name="СonsoleInputCalculator.jar">
+      <element id="module-output" name="СonsoleInputCalculator" />
+    </root>
+  </artifact>
+</component>
