@@ -55,8 +55,8 @@ public class Calculator {
         while (again) {
 
 // Assign the initial values for 1st, 2nd digits and the result
-            double firstDigit = 0;
-            double secondDigit = 0;
+            double firstDigit;
+            double secondDigit;
             double res = 0;
 // Define values for 1st, 2nd digits via method "inpdig"
             try {
@@ -155,6 +155,9 @@ public class Calculator {
             if(charArrayResult[z1] == '.'){
                 stringArrayResult[z1] = new String[]{"     ", "     ", "     ", "     ", "     ", " ZZ  ", " ZZ  "};
                 }
+            if(charArrayResult[z1] == '4'){
+                stringArrayResult[z1] = new String[]{"  Z  Z ", "  Z  Z ", "  Z  Z ", "  ZZZZ ", "     Z ", "     Z ","     Z "};
+            }
         }
         System.out.println("Print out final result in pseudographic mode:\n"/* + Arrays.deepToString(stringArrayResult*/);
 
