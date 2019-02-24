@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ArrayThree" />
+        <module name="ArrayTwo" />
+        <module name="CodingBatMavenTests" />
+        <module name="group1CountCode" />
+        <module name="StringThreeMethods" />
+        <module name="StringTwoMethods" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ArrayThree" target="1.5" />
+      <module name="ArrayTwo" target="1.5" />
+      <module name="CodingBatArtefacts" target="1.5" />
+      <module name="CodingBatMavenTests" target="1.5" />
+      <module name="group1CountCode" target="1.5" />
+      <module name="StringTwoMethods" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

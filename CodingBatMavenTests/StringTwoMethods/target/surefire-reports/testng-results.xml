@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="31" started-at="2018-11-24T12:00:41Z" finished-at="2018-11-24T12:00:41Z">
+    <groups>
+      <group name="doubleChar">
+        <method signature="StringTwoCountCodeTest.testDoubleCharExpectedToFail()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="testDoubleCharExpectedToFail" class="StringTwoCountCodeTest"/>
+        <method signature="StringTwoMethodsTest.testDoubleChar()[pri:0, instance:StringTwoMethodsTest@7a79be86]" name="testDoubleChar" class="StringTwoMethodsTest"/>
+        <method signature="StringTwoMethodsTest.testDoubleCharExpectedToFail()[pri:0, instance:StringTwoMethodsTest@7a79be86]" name="testDoubleCharExpectedToFail" class="StringTwoMethodsTest"/>
+      </group> <!-- doubleChar -->
+      <group name="testCountCode">
+        <method signature="StringTwoCountCodeTest.testCountCode()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="testCountCode" class="StringTwoCountCodeTest"/>
+        <method signature="StringTwoCountCodeTest.testCountCode2()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="testCountCode2" class="StringTwoCountCodeTest"/>
+        <method signature="StringTwoCountCodeTest.testCountCode3()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="testCountCode3" class="StringTwoCountCodeTest"/>
+        <method signature="StringTwoCountCodeTest.testCountCode4()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="testCountCode4" class="StringTwoCountCodeTest"/>
+      </group> <!-- testCountCode -->
+    </groups>
+    <test name="Command line test" duration-ms="31" started-at="2018-11-24T12:00:41Z" finished-at="2018-11-24T12:00:41Z">
+      <class name="StringTwoCountCodeTest">
+        <test-method status="PASS" signature="startRequiredClass()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="startRequiredClass" is-config="true" duration-ms="12" started-at="2018-11-24T15:00:41Z" finished-at="2018-11-24T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startRequiredClass -->
+        <test-method status="PASS" signature="startRequiredClass()[pri:0, instance:StringTwoMethodsTest@7a79be86]" name="startRequiredClass" is-config="true" duration-ms="0" started-at="2018-11-24T15:00:41Z" finished-at="2018-11-24T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startRequiredClass -->
+        <test-method status="PASS" signature="testCountCode()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="testCountCode" duration-ms="4" started-at="2018-11-24T15:00:41Z" finished-at="2018-11-24T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountCode -->
+        <test-method status="PASS" signature="testCountCode2()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="testCountCode2" duration-ms="0" started-at="2018-11-24T15:00:41Z" finished-at="2018-11-24T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountCode2 -->
+        <test-method status="PASS" signature="testCountCode3()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="testCountCode3" duration-ms="0" started-at="2018-11-24T15:00:41Z" finished-at="2018-11-24T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountCode3 -->
+        <test-method status="PASS" signature="testDoubleCharExpectedToFail()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="testDoubleCharExpectedToFail" duration-ms="1" started-at="2018-11-24T15:00:41Z" finished-at="2018-11-24T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubleCharExpectedToFail -->
+        <test-method status="PASS" signature="testCountCode4()[pri:0, instance:StringTwoCountCodeTest@6bdf28bb]" name="testCountCode4" duration-ms="0" started-at="2018-11-24T15:00:41Z" finished-at="2018-11-24T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountCode4 -->
+      </class> <!-- StringTwoCountCodeTest -->
+      <class name="StringTwoMethodsTest">
+        <test-method status="PASS" signature="testDoubleChar()[pri:0, instance:StringTwoMethodsTest@7a79be86]" name="testDoubleChar" duration-ms="0" started-at="2018-11-24T15:00:41Z" finished-at="2018-11-24T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubleChar -->
+        <test-method status="PASS" signature="testDoubleCharExpectedToFail()[pri:0, instance:StringTwoMethodsTest@7a79be86]" name="testDoubleCharExpectedToFail" duration-ms="0" started-at="2018-11-24T15:00:41Z" finished-at="2018-11-24T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubleCharExpectedToFail -->
+        <test-method status="PASS" signature="AfterRequiredClass()[pri:0, instance:StringTwoMethodsTest@7a79be86]" name="AfterRequiredClass" is-config="true" duration-ms="0" started-at="2018-11-24T15:00:41Z" finished-at="2018-11-24T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterRequiredClass -->
+      </class> <!-- StringTwoMethodsTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="45" started-at="2018-11-23T16:04:51Z" finished-at="2018-11-23T16:04:51Z">
+    <groups>
+      <group name="doubleChar">
+        <method signature="StringTwoMethodsTest.testDoubleChar()[pri:0, instance:StringTwoMethodsTest@5b464ce8]" name="testDoubleChar" class="StringTwoMethodsTest"/>
+        <method signature="StringTwoMethodsTest.testDoubleCharExpectedToFail()[pri:0, instance:StringTwoMethodsTest@5b464ce8]" name="testDoubleCharExpectedToFail" class="StringTwoMethodsTest"/>
+      </group> <!-- doubleChar -->
+    </groups>
+    <test name="Surefire test" duration-ms="45" started-at="2018-11-23T16:04:51Z" finished-at="2018-11-23T16:04:51Z">
+      <class name="StringTwoMethodsTest">
+        <test-method status="PASS" signature="startRequiredClass()[pri:0, instance:StringTwoMethodsTest@5b464ce8]" name="startRequiredClass" is-config="true" duration-ms="25" started-at="2018-11-23T19:04:51Z" finished-at="2018-11-23T19:04:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startRequiredClass -->
+        <test-method status="PASS" signature="testDoubleChar()[pri:0, instance:StringTwoMethodsTest@5b464ce8]" name="testDoubleChar" duration-ms="5" started-at="2018-11-23T19:04:51Z" finished-at="2018-11-23T19:04:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubleChar -->
+        <test-method status="PASS" signature="testDoubleCharExpectedToFail()[pri:0, instance:StringTwoMethodsTest@5b464ce8]" name="testDoubleCharExpectedToFail" duration-ms="0" started-at="2018-11-23T19:04:51Z" finished-at="2018-11-23T19:04:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubleCharExpectedToFail -->
+      </class> <!-- StringTwoMethodsTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

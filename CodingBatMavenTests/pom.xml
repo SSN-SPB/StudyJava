@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>CodingBat</groupId>
+    <artifactId>CodingBatArtefacts</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>StringThreeMethods</module>
+        <module>StringTwoMethods</module>
+        <module>ArrayTwo</module>
+        <module>ArrayThree</module>
+    </modules>
+
+    <dependencies>
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.8</version>
+        <scope>test</scope>
+    </dependency>
+        <dependency>
+            <groupId>CodingBat</groupId>
+            <artifactId>StringTwoMethods</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+<!--    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>-->
+
+
+    <profiles>
+        <profile>
+            <id>StringTwo</id>
+
+            <build>
+                <directory>target/CountTwo</directory>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M1</version>
+                        <configuration>
+                            <excludes>
+                                <exclude>StringTwoCountCodeTest.java</exclude>
+                                <exclude>StringTwoCountMethodsTest.java</exclude>
+                            </excludes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+
+        </profile>
+        <profile>
+            <id>StringThree</id>
+
+            <build>
+                <directory>target/CountTwo</directory>
+                <!-- artefacts are placedt to directory target/CountTwo within group 'StringTwoMethods' route <include></include>-->
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M1</version>
+                        <configuration>
+                            <includes>
+                                <include>StringThreeCountMethodsTest.java</include>
+                                <!-- launch mvn install -P CountTwo from group 'StringTwoMethods' route <include></include>-->
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+
+        </profile>
+
+    </profiles>
+
+</project>
