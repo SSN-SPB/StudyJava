@@ -7,6 +7,7 @@ public class ArrayTwoTasks {
 
             no14([1, 2, 3]) → true
     no14([1, 2, 3, 4]) → false
+    no14([2, 1]) → true
     no14([2, 3, 4]) → true*/
 
     public boolean no14(int[] nums) {
