@@ -44,4 +44,12 @@ public class ArrayTwoTasksTest {
         Assert.assertEquals(result,false);
 
     }
+    @Test
+    public void testNo14TestExpectedFalseFive() {
+        ArrayTwoTasks arrayTwoTasks = new ArrayTwoTasks();
+        int [] testedNums = {1,3, 4,5,6,7};
+        boolean result=arrayTwoTasks.no14(testedNums);
+        Assert.assertEquals(result,false);
+
+    }
     }
