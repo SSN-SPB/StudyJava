@@ -1,66 +1,58 @@
 import java.util.Scanner;
 
 public class Calculator {
-    public int result=10;
+    public int result=0;
 
     public void runCalculator() {
-//        do {
+        String operandString="";
+        do {
+
             showMenu();
-//        }while (true);
+            operandString = readOperand("Please enter operand: ");
+            int selectedNumber = readNumber("Please enter number: ");
+            switch (operandString) {
+                case "+":
+                    addMethod(selectedNumber);
+                    break;
+                case "-":
+                    deductMethod(selectedNumber);
+                    break;
+                case "/":
+                     devideMethod(selectedNumber);
+                    break;
+                case "*":
+                     mulityplyMethod(selectedNumber);
+                    break;
+
+            }
+            System.out.println("Your current value is: " + result);
+        }while (!operandString.equals("Q"));
+       System.out.println("Your final value is: " + result);
     }
 
         public void showMenu () {
-            System.out.println("+ Add");
-            System.out.println("- Deduct");
-            System.out.println("* Multiply");
-            System.out.println("/ Devide");
-            System.out.println("Q Quit");
-            //System.out.println("Your current value is: " + result);
-            String operandString = readOperand();
-            int numberOneInput = readNumber();
+       //     do {
+                System.out.println("+ Add");
+                System.out.println("- Deduct");
+                System.out.println("* Multiply");
+                System.out.println("/ Divide");
+                System.out.println("Q Quit");
+            System.out.println("Your current value is: " + result);
 
-            /*if ("+" == operandString){
-                addMethod();
-            } else if ("-" == operandString){
-                deductMethod();
-            } else if {
-
-            }*/
+              }
 
 
-            switch (operandString) {
-                case "+":
-                    addMethod(numberOneInput);
-                    break;
-                case "-":
-                    deductMethod(numberOneInput);
-                    break;
-                case "/":
-                    // addMethod();
-                    break;
-                case "*":
-                    // addMethod();
-                    break;
-                case "Q":
-                    quitMethod();
-                    break;
-            }
-            System.out.println("Your final value is: " + result);
-
-        }
-        public String readOperand () {
-            System.out.println("Type the operand:");
+        public String readOperand(String s) {
+            System.out.println(s);
             Scanner sc = new Scanner(System.in);
             String srtInput = sc.nextLine();
-            System.out.println("Your operand is: " + srtInput);
             return srtInput;
 
         }
-        public int readNumber () {
-            System.out.println("Type your number:");
+        public int readNumber(String s) {
+            System.out.println(s);
             Scanner sc = new Scanner(System.in);
             int i =sc.nextInt();
-            System.out.println("Your number is: " + i);
             return i;
 
         }
@@ -85,10 +77,7 @@ public class Calculator {
         }
 
 
-        public void quitMethod () {
-
-        }
-    }
+     }
 
 /*
 showMenu
