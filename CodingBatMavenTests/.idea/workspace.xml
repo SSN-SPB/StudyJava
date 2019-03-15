@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5c9c438-5174-4c6e-a368-714ff2731bde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../JavaForTestersCalculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/StudyJava.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaForTesters201903/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaForTesters201903/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaForTesters201903/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaForTesters201903/src/Calculator.java" afterDir="false" />
@@ -221,9 +216,9 @@
       </PATH>
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-33" />
-    <option name="y" value="-19" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-34" />
+    <option name="y" value="-20" />
     <option name="width" value="1940" />
     <option name="height" value="1005" />
   </component>
@@ -689,6 +684,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />

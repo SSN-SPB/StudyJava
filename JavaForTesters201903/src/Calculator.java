@@ -1,7 +1,15 @@
 import java.util.Scanner;
 
 public class Calculator {
-    public int result=0;
+    public int getResult() {
+        return result;
+    }
+
+    public void setResult(int result) {
+        this.result = result;
+    }
+
+    private int result=0;
 
     public void runCalculator() {
         String operandString="";
@@ -30,7 +38,7 @@ public class Calculator {
        System.out.println("Your final value is: " + result);
     }
 
-        public void showMenu () {
+        private void showMenu () {
        //     do {
                 System.out.println("+ Add");
                 System.out.println("- Deduct");
@@ -42,36 +50,50 @@ public class Calculator {
               }
 
 
-        public String readOperand(String s) {
-            System.out.println(s);
-            Scanner sc = new Scanner(System.in);
-            String srtInput = sc.nextLine();
-            return srtInput;
 
-        }
-        public int readNumber(String s) {
-            System.out.println(s);
-            Scanner sc = new Scanner(System.in);
-            int i =sc.nextInt();
-            return i;
+        private String readOperand(String s) {
+            Scanner sc = getScanner(s);
+//            String srtInput = sc.nextLine();
+            return sc.nextLine();
 
         }
 
-        public int addMethod (int number) {
+    private Scanner getScanner(String s) {
+        System.out.println(s);
+        return new Scanner(System.in);
+    }
+
+    private int readNumber(String s) {
+        Scanner sc = getScanner(s);
+//        int i =sc.nextInt();
+        boolean isValid=false;
+        int i = 0;
+
+        try {
+            i = Integer.parseInt(readOperand(s));
+            isValid=true;
+        } catch (NumberFormatException e) {
+            System.out.println("The wrong value, try one more time please");
+        }
+        return i;
+
+        }
+
+        private int addMethod (int number) {
         result = result + number;
         return result;
 
 
         }
-        public int deductMethod (int number) {
+        private int deductMethod (int number) {
             result -= number;
             return result;
         }
-        public int devideMethod (int number) {
+        private int devideMethod (int number) {
             result/=number;
             return result;
         }
-        public int mulityplyMethod (int number) {
+        private int mulityplyMethod (int number) {
         result *=number;
         return result;
         }
