@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5c9c438-5174-4c6e-a368-714ff2731bde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaForTesters201903/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaForTesters201903/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaForTesters201903/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaForTesters201903/src/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaForTesters201903/src/CalculatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaForTesters201903/src/CalculatorApplication.java" afterDir="false" />
-    </list>
+    <list default="true" id="c5c9c438-5174-4c6e-a368-714ff2731bde" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/StringThreeMethods/target/" />
@@ -78,7 +73,8 @@
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -216,11 +212,11 @@
       </PATH>
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-34" />
-    <option name="y" value="-20" />
-    <option name="width" value="1940" />
-    <option name="height" value="1005" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -228,8 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -333,6 +327,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -689,7 +685,7 @@
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Palette&#9;" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.26107383" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.26510066" />
       <window_info id="Structure" order="4" weight="0.25" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />

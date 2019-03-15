@@ -1,0 +1,14 @@
+    1  git clone 
+    2  git clone https://github.com/SSN-SPB/StudyJava.git
+    3  git status
+    4  cd StudyJava/
+    5  cd StudyJava/
+    6  git status
+    7  git status
+    8  git add -A
+    9  git status
+   10  git commit -a "TestNG added for ArrayTwoTask"
+   11  git commit -m "TestNG added for ArrayTwoTask"
+   12  git push
+   13  history
+   14  history > l.txt
