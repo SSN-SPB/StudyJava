@@ -47,4 +47,34 @@ public class StringTwoMethodsTest {
         System.out.println(" PrintOut StringTwoMethodsTest class");
 
     }
+
+    @Test
+    public void testConCat() {
+        StringTwoMethods concatTest = new StringTwoMethods();
+        String result = concatTest.conCat("test", "bob");
+        Assert.assertEquals(result,"testbob");
+
+    }
+    @Test
+    public void testConCat2() {
+        StringTwoMethods concatTest = new StringTwoMethods();
+        String expectedString = concatTest.conCat("abc", "cat") ;
+        Assert.assertEquals(expectedString,"abcat");
+
+    }
+    @Test
+    public void testConCat3() {
+        StringTwoMethods concatTest = new StringTwoMethods();
+        String expectedString = concatTest.conCat("abc", "cat") ;
+        Assert.assertEquals(expectedString,"abcat");
+
+    }
+
+    @Test
+    public void testConCat4() {
+        StringTwoMethods concatTest = new StringTwoMethods();
+        String expectedString = concatTest.conCat("abc", "") ;
+        Assert.assertEquals(expectedString,"abc");
+
+    }
 }

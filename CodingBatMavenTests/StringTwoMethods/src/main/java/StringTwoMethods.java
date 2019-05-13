@@ -48,4 +48,56 @@ public class StringTwoMethods {
         return count;
     }
 
+    public String conCat(String a, String b) {
+
+        /*https://codingbat.com/prob/p132118
+        Given two strings, append them together (known as "concatenation") and return the result. However, if the concatenation creates a double-char, then omit one of the chars, so "abc" and "cat" yields "abcat".
+
+
+                conCat("abc", "cat") → "abcat"
+        conCat("dog", "cat") → "dogcat"
+        conCat("abc", "") → "abc"*/
+
+        String resultString="";
+        String lastA ="";
+        String firstB ="";
+        if (!a.equals("")) {
+             lastA = a.substring(a.length() - 1);
+        }
+
+        if (!b.equals("")) {
+            firstB=b.substring(0,1);
+        }
+        resultString = a.concat(b);
+        if (lastA.equals(firstB)){
+
+            String AA=a.substring(0,a.length() - 1);
+            resultString=AA.concat(b);
+            //resultString="xxx";
+        }
+        return resultString;
+
+    }
+
+
+    public int countHi(String str) {
+      /*  https://codingbat.com/prob/p147448
+
+        Return the number of times that the string "hi" appears anywhere in the given string.
+
+
+        countHi("abc hi ho") → 1
+        countHi("ABChi hi") → 2
+        countHi("hihi") → 2*/
+        int calculated=0;
+
+        for (int x=0; x<str.length()-1;x++){
+
+            if(str.substring(x,x+2).equals("hi")){
+                calculated++;
+            }
+
+        }
+        return calculated;
+    }
 }
