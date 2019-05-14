@@ -9,10 +9,18 @@ public class StringTwoMethodsContHiTest {
             StringTwoMethods countHi = new StringTwoMethods(); int countHiValue = countHi.countHi("hihi") ;
             Assert.assertEquals(countHiValue,2);
 
-        }    @Test
+        }
+
+        @Test
     public void testCountHiTwoPositive() {
             StringTwoMethods countHi = new StringTwoMethods(); int countHiValue = countHi.countHi("AHIBhiChi hi") ;
             Assert.assertEquals(countHiValue,3);
+
+        }
+        @Test
+    public void testCountHiThreePositive() {
+            StringTwoMethods countHi = new StringTwoMethods(); int countHiValue = countHi.countHi("AHIBhiChi hi") ;
+            Assert.assertNotSame(countHiValue,5);
 
         }
     }
