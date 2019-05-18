@@ -23,4 +23,11 @@ public class StringTwoMethodsContHiTest {
             Assert.assertNotSame(countHiValue,5);
 
         }
+
+    @Test
+    public void testCountHiFourPositive() {
+        StringTwoMethods countHi = new StringTwoMethods(); int countHiValue = countHi.countHi("AHIBhiChi hi eeehi") ;
+        Assert.assertNotSame(countHiValue,5);
+
+    }
     }
