@@ -32,7 +32,6 @@ public class StringTwoMethodsContHiTest {
 
     }
 
-
     @DataProvider(name = "CountHi")
     public Object[][] dataProvider() {
         return new Object[][]
@@ -42,6 +41,7 @@ public class StringTwoMethodsContHiTest {
                         { " hi", 1 },
                         { " hi", 2 },
                         { " hihi", 2 },
+                        { " hihihi hihihi hi", 7 },
                         { "Ahi hihihihhi", 5 }
                 };
     }
