@@ -40,6 +40,8 @@ public class StringTwoMethodsContHiTest {
                         { "AHIBhiChi hi", 3 },
                         { "Ahi hi", 2 },
                         { " hi", 1 },
+                        { " hi", 2 },
+                        { " hihi", 2 },
                         { "Ahi hihihihhi", 5 }
                 };
     }
@@ -56,8 +58,12 @@ public class StringTwoMethodsContHiTest {
 
     @Test (dataProvider = "CountHi")
     public void testCountHiPositive(String testString, int resultValue) {
-        StringTwoMethods countHi = new StringTwoMethods(); int countHiValue = countHi.countHi(testString) ;
-        Assert.assertNotSame(countHiValue,resultValue);
+        StringTwoMethods countHi = new StringTwoMethods();
+        Object countHiValue = countHi.countHi(testString) ;
+        //Assert.assertEquals(countHiValue,resultValue);
+        System.out.println("Expected: " + countHiValue + "; Actual: " + resultValue);
+
+        Assert.assertEquals(countHiValue,resultValue, "TestResult:");
 
     }
     }
