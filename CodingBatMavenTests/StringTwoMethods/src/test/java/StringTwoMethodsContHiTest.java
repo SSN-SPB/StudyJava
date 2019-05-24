@@ -1,3 +1,4 @@
+import ServicesData.ParametersData;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -32,19 +33,6 @@ public class StringTwoMethodsContHiTest {
 
     }
 
-    @DataProvider(name = "CountHi")
-    public Object[][] dataProvider() {
-        return new Object[][]
-                {
-                        { "AHIBhiChi hi", 3 },
-                        { "Ahi hi", 2 },
-                        { " hi", 1 },
-                        { " hi", 2 },
-                        { " hihi", 2 },
-                        { " hihihi hihihi hi", 7 },
-                        { "Ahi hihihihhi", 5 }
-                };
-    }
     /*@DataProvider(name = "addMethodDataProvider")
     public Object[][] dataProvider() {
         return new Object[][] { { 2, 5, 7 }, { 3, 7, 10 }, { 4, 5, 9 } };
@@ -56,14 +44,22 @@ public class StringTwoMethodsContHiTest {
         Assert.assertEquals(calculator.add(a, b), result);
     }*/
 
-    @Test (dataProvider = "CountHi")
-    public void testCountHiPositive(String testString, int resultValue) {
+    @Test (dataProvider = "CountHi", dataProviderClass = ParametersData.class)
+    public void testCountHiPositive(String testString, int resultValue){
         StringTwoMethods countHi = new StringTwoMethods();
         Object countHiValue = countHi.countHi(testString) ;
         //Assert.assertEquals(countHiValue,resultValue);
         System.out.println("Expected: " + countHiValue + "; Actual: " + resultValue);
 
-        Assert.assertEquals(countHiValue,resultValue, "TestResult:");
+        try {
+            Assert.assertEquals(countHiValue,resultValue, "TestResult:");
+        } catch (AssertionError e) {
+//            e.printStackTrace();
+            System.out.println("The test above has failed:" + " String: '" + testString + "' is counted as " + resultValue + " while is expected: " + countHiValue);
+            System.out.println(e.getLocalizedMessage());
+          //  throw e;
+            Assert.fail();
+        }
 
     }
     }
