@@ -6,16 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ArrayThree" />
-        <module name="ArrayTwo" />
-        <module name="CodingBatMavenTests" />
-        <module name="group1CountCode" />
-        <module name="StringThreeMethods" />
-        <module name="StringTwoMethods" />
+        <module name="JavaForTestersCalculator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CodingBatMavenTests" target="1.5" />
+      <module name="JavaForTestersCalculator" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -14,7 +14,7 @@
    <package name="StringTwoMethods.src.test.java"></package>
 </packages>
       <!--<classes>
-         <class name = "StringTwoMethodsTest" />
+         <class name = "StringTwoMethodsDoubleCharTest" />
       </classes>-->
 
    </test>

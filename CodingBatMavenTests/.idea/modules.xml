@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ArrayThree/ArrayThree.iml" filepath="$PROJECT_DIR$/ArrayThree/ArrayThree.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ArrayTwo/ArrayTwo.iml" filepath="$PROJECT_DIR$/ArrayTwo/ArrayTwo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CodingBatArtefacts.iml" filepath="$PROJECT_DIR$/CodingBatArtefacts.iml" />
       <module fileurl="file://$PROJECT_DIR$/CodingBatMavenTests.iml" filepath="$PROJECT_DIR$/CodingBatMavenTests.iml" />
-      <module fileurl="file://$PROJECT_DIR$/StringTwoMethods/StringTwoMethods.iml" filepath="$PROJECT_DIR$/StringTwoMethods/StringTwoMethods.iml" />
-      <module fileurl="file://$PROJECT_DIR$/StringThreeMethods/group1CountCode.iml" filepath="$PROJECT_DIR$/StringThreeMethods/group1CountCode.iml" />
     </modules>
   </component>
 </project>
