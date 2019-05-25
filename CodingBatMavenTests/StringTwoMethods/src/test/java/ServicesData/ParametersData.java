@@ -17,4 +17,15 @@ public class ParametersData {
                         { "Ahi hihihihhi", 5 }
                 };
     }
+    @DataProvider(name = "doubleCharDataProvider")
+    public static Object[][] doubleChar() {
+        return new Object[][]
+                {
+                        { "hi", "hhii" },
+                        { "step", "sstteepp" },
+                        { "the", "tthhee" },
+                        { "hii", "hhiiii" }
+
+                };
+    }
 }

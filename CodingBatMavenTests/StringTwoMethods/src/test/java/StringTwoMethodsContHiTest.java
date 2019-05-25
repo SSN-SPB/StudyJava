@@ -13,36 +13,22 @@ public class StringTwoMethodsContHiTest {
 
         }
 
-        @Test
+
+    @Test
     public void testCountHiTwoPositive() {
             StringTwoMethods countHi = new StringTwoMethods(); int countHiValue = countHi.countHi("AHIBhiChi hi") ;
             Assert.assertEquals(countHiValue,3);
 
         }
-        /*@Test
-    public void testCountHiThreePositive() {
-            StringTwoMethods countHi = new StringTwoMethods(); int countHiValue = countHi.countHi("AHIBhiChi hi") ;
-            Assert.assertNotSame(countHiValue,5);
-
-        }*/
 
     @Test
-    public void testCountHiFourPositive() {
+    public void testCountHiFourNegative() {
         StringTwoMethods countHi = new StringTwoMethods(); int countHiValue = countHi.countHi("AHIBhiChi hi eeehi") ;
         Assert.assertNotSame(countHiValue,5);
 
     }
 
-    /*@DataProvider(name = "addMethodDataProvider")
-    public Object[][] dataProvider() {
-        return new Object[][] { { 2, 5, 7 }, { 3, 7, 10 }, { 4, 5, 9 } };
-    }
 
-    @Test(dataProvider = "addMethodDataProvider")
-    public void testAddMethod(int a, int b, int result) {
-        Calculator calculator = new Calculator();
-        Assert.assertEquals(calculator.add(a, b), result);
-    }*/
 
     @Test (dataProvider = "CountHi", dataProviderClass = ParametersData.class)
     public void testCountHiPositive(String testString, int resultValue){
@@ -60,6 +46,5 @@ public class StringTwoMethodsContHiTest {
           //  throw e;
             Assert.fail();
         }
-
     }
     }

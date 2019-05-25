@@ -1,3 +1,4 @@
+import ServicesData.ParametersData;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.testng.Assert;
@@ -6,15 +7,34 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Method;
+
 import static org.testng.Assert.*;
 
-public class StringTwoMethodsTest {
+public class StringTwoMethodsDoubleCharTest {
     @BeforeTest
     public void startRequiredClass(){
-        //StringTwoMethods stringTwoMethods = new StringTwoMethods();
-        System.out.println(" PrintOut StringTwoMethodsTest before class");
+        // Get the class name
+        String className = this.getClass().getName();
+        System.out.println(" The following list of test is in this class: " + className);
+        Class aClass = this.getClass();
+
+        // Get the methods
+        Method[] methods = aClass.getDeclaredMethods();
+
+        // Loop through the methods and print out their names
+        for (Method method : methods) {
+            System.out.println(method.getName());
+        }
 
     }
+    @Test (dataProvider = "doubleCharDataProvider", dataProviderClass = ParametersData.class)
+    public void testCountHiPositive(String testString, String ethalon){
+        StringTwoMethods stringTwoMethods = new StringTwoMethods();
+        Object resultString = stringTwoMethods.doubleChar(testString) ;
+        System.out.println("ethalon: " + ethalon + " result: " + resultString);
+            Assert.assertEquals(resultString,ethalon, "TestResult:");
+          }
 
     @Test (groups = "doubleChar", priority = 2)
     public void testDoubleChar() {
@@ -34,17 +54,12 @@ public class StringTwoMethodsTest {
 
     }
 
-  /*  @Test (groups = { "testCountCode" })
-    public void testCountCode() throws Exception {
-        StringTwoMethods stringTwoMethods = new StringTwoMethods();
-        String testString ="codexxcode";
-        Assert.assertEquals(2, stringTwoMethods.countCode(testString));
-    }*/
+
 
     @AfterClass
     public void AfterRequiredClass(){
         //StringTwoMethods stringTwoMethods = new StringTwoMethods();
-        System.out.println(" PrintOut StringTwoMethodsTest class");
+        System.out.println(" PrintOut StringTwoMethodsDoubleCharTest after class");
 
     }
 

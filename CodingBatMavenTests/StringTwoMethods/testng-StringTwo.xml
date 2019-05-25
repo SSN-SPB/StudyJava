@@ -12,8 +12,8 @@
       </groups>
 
       <classes>
-         <class name = "StringTwoMethodsTest" />
-         <class name = "StringTwoMethodsTest" />
+         <class name = "StringTwoMethodsDoubleCharTest" />
+         <class name = "StringTwoMethodsDoubleCharTest" />
       </classes>
 
    </test>
