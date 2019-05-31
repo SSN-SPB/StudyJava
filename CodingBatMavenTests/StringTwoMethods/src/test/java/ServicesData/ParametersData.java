@@ -24,6 +24,7 @@ public class ParametersData {
                         { "hi", "hhii" },
                         { "step", "sstteepp" },
                         { "the", "tthhee" },
+                        { "he", "hhee" },
                         { "hii", "hhiiii" }
 
                 };

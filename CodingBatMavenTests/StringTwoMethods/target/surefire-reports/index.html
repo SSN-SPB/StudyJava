@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
-                    <span>2 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">31 methods, 2 failed,   29 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHiPositive( hi, 2)">testCountHiPositive( hi, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHiPositive( hihihi hihihi hi, 1)">testCountHiPositive( hihihi hihihi hi, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +120,47 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testConCat">testConCat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testConCat2">testConCat2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testConCat3">testConCat3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testConCat4">testConCat4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoCountCodeTest" hash-for-method="testCountCode">testCountCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoCountCodeTest" hash-for-method="testCountCode2">testCountCode2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoCountCodeTest" hash-for-method="testCountCode2">testCountCode2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoCountCodeTest" hash-for-method="testCountCode2">testCountCode2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoCountCodeTest" hash-for-method="testCountCode2">testCountCode2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -121,7 +180,77 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsTest" hash-for-method="testDoubleChar">testDoubleChar</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHi">testCountHi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHiFourNegative">testCountHiFourNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHiPositive( hi, 1)">testCountHiPositive( hi, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testCountHiPositive(he, hhee)">testCountHiPositive(he, hhee)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testCountHiPositive(hi, hhii)">testCountHiPositive(hi, hhii)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHiPositive(Ahi hihihihhi, 5)">testCountHiPositive(Ahi hihihihhi, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHiPositive(AHIBhiChi hi, 3)">testCountHiPositive(AHIBhiChi hi, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testCountHiPositive(the, tthhee)">testCountHiPositive(the, tthhee)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHiPositive( hihi, 2)">testCountHiPositive( hihi, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testCountHiPositive(step, sstteepp)">testCountHiPositive(step, sstteepp)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testCountHiPositive(hii, hhiiii)">testCountHiPositive(hii, hhiiii)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHiPositive( hihihi hihihi hi, 7)">testCountHiPositive( hihihi hihihi hi, 7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHiPositive(Ahi hi, 2)">testCountHiPositive(Ahi hi, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsContHiTest" hash-for-method="testCountHiTwoPositive">testCountHiTwoPositive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testDoubleChar">testDoubleChar</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -131,7 +260,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsTest" hash-for-method="testDoubleCharExpectedToFail">testDoubleCharExpectedToFail</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="StringTwoMethodsDoubleCharTest" hash-for-method="testDoubleCharExpectedToFail">testDoubleCharExpectedToFail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -146,6 +275,132 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">StringTwoMethodsContHiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive( hi, 2)">
+                  </a> <!-- testCountHiPositive( hi, 2) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">( hi, 2)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: null
+	at StringTwoMethodsContHiTest.testCountHiPositive(StringTwoMethodsContHiTest.java:47)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 27 stack frames<br/> java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at StringTwoMethodsContHiTest.testCountHiPositive(StringTwoMethodsContHiTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.fail(Assert.java:101)<br>StringTwoMethodsContHiTest.testCountHiPositive(StringTwoMethodsContHiTest.java:47)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive( hihihi hihihi hi, 1)">
+                  </a> <!-- testCountHiPositive( hihihi hihihi hi, 1) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">( hihihi hihihi hi, 1)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: null
+	at StringTwoMethodsContHiTest.testCountHiPositive(StringTwoMethodsContHiTest.java:47)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 27 stack frames<br/> java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at StringTwoMethodsContHiTest.testCountHiPositive(StringTwoMethodsContHiTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.fail(Assert.java:101)<br>StringTwoMethodsContHiTest.testCountHiPositive(StringTwoMethodsContHiTest.java:47)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -157,6 +412,34 @@
                   <a name="testCountCode">
                   </a> <!-- testCountCode -->
                   <span class="method-name">testCountCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountCode2">
+                  </a> <!-- testCountCode2 -->
+                  <span class="method-name">testCountCode2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountCode2">
+                  </a> <!-- testCountCode2 -->
+                  <span class="method-name">testCountCode2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountCode2">
+                  </a> <!-- testCountCode2 -->
+                  <span class="method-name">testCountCode2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountCode2">
+                  </a> <!-- testCountCode2 -->
+                  <span class="method-name">testCountCode2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -192,9 +475,77 @@
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">StringTwoMethodsTest</span>
+              <span class="class-name">StringTwoMethodsDoubleCharTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testConCat">
+                  </a> <!-- testConCat -->
+                  <span class="method-name">testConCat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testConCat2">
+                  </a> <!-- testConCat2 -->
+                  <span class="method-name">testConCat2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testConCat3">
+                  </a> <!-- testConCat3 -->
+                  <span class="method-name">testConCat3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testConCat4">
+                  </a> <!-- testConCat4 -->
+                  <span class="method-name">testConCat4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive(he, hhee)">
+                  </a> <!-- testCountHiPositive(he, hhee) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">(he, hhee)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive(hi, hhii)">
+                  </a> <!-- testCountHiPositive(hi, hhii) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">(hi, hhii)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive(the, tthhee)">
+                  </a> <!-- testCountHiPositive(the, tthhee) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">(the, tthhee)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive(step, sstteepp)">
+                  </a> <!-- testCountHiPositive(step, sstteepp) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">(step, sstteepp)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive(hii, hhiiii)">
+                  </a> <!-- testCountHiPositive(hii, hhiiii) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">(hii, hhiiii)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testDoubleChar">
@@ -211,6 +562,83 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">StringTwoMethodsContHiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHi">
+                  </a> <!-- testCountHi -->
+                  <span class="method-name">testCountHi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiFourNegative">
+                  </a> <!-- testCountHiFourNegative -->
+                  <span class="method-name">testCountHiFourNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive( hi, 1)">
+                  </a> <!-- testCountHiPositive( hi, 1) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">( hi, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive(Ahi hihihihhi, 5)">
+                  </a> <!-- testCountHiPositive(Ahi hihihihhi, 5) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">(Ahi hihihihhi, 5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive(AHIBhiChi hi, 3)">
+                  </a> <!-- testCountHiPositive(AHIBhiChi hi, 3) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">(AHIBhiChi hi, 3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive( hihi, 2)">
+                  </a> <!-- testCountHiPositive( hihi, 2) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">( hihi, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive( hihihi hihihi hi, 7)">
+                  </a> <!-- testCountHiPositive( hihihi hihihi hi, 7) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">( hihihi hihihi hi, 7)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiPositive(Ahi hi, 2)">
+                  </a> <!-- testCountHiPositive(Ahi hi, 2) -->
+                  <span class="method-name">testCountHiPositive</span>
+                  <span class="parameters">(Ahi hi, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountHiTwoPositive">
+                  </a> <!-- testCountHiTwoPositive -->
+                  <span class="method-name">testCountHiTwoPositive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
         <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -223,7 +651,8 @@
   &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;StringTwoCountCodeTest&quot;/&gt;
-      &lt;class name=&quot;StringTwoMethodsTest&quot;/&gt;
+      &lt;class name=&quot;StringTwoMethodsContHiTest&quot;/&gt;
+      &lt;class name=&quot;StringTwoMethodsDoubleCharTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
 &lt;/suite&gt; &lt;!-- Command line suite --&gt;
@@ -237,7 +666,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (2 classes)</span>
+                <span class="test-name">Command line test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -251,9 +680,21 @@
               <span class="test-group-name">doubleChar</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">testCountCode3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">testDoubleChar</span>
                 <br/>
               </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleCharExpectedToFail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">doubleChar2</span>
+              <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">testDoubleCharExpectedToFail</span>
                 <br/>
@@ -268,10 +709,6 @@
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">testCountCode2</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">testCountCode3</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -295,40 +732,136 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(31);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCountCode')
-data.setCell(0, 2, 'StringTwoCountCodeTest')
-data.setCell(0, 3, 4);
+data.setCell(0, 1, 'testCountHiPositive')
+data.setCell(0, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(0, 3, 9);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testDoubleCharExpectedToFail')
-data.setCell(1, 2, 'StringTwoCountCodeTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'testCountHi')
+data.setCell(1, 2, 'StringTwoMethodsContHiTest')
+data.setCell(1, 3, 7);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCountCode3')
-data.setCell(2, 2, 'StringTwoCountCodeTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'testDoubleCharExpectedToFail')
+data.setCell(2, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(2, 3, 5);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCountCode4')
-data.setCell(3, 2, 'StringTwoCountCodeTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'testCountHiPositive')
+data.setCell(3, 2, 'StringTwoMethodsContHiTest')
+data.setCell(3, 3, 4);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCountCode2')
-data.setCell(4, 2, 'StringTwoCountCodeTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'testCountHiPositive')
+data.setCell(4, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testDoubleChar')
-data.setCell(5, 2, 'StringTwoMethodsTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'testConCat2')
+data.setCell(5, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testDoubleCharExpectedToFail')
-data.setCell(6, 2, 'StringTwoMethodsTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'testCountHiPositive')
+data.setCell(6, 2, 'StringTwoMethodsContHiTest')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testCountCode2')
+data.setCell(7, 2, 'StringTwoCountCodeTest')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testCountHiTwoPositive')
+data.setCell(8, 2, 'StringTwoMethodsContHiTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testCountCode3')
+data.setCell(9, 2, 'StringTwoCountCodeTest')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testCountHiPositive')
+data.setCell(10, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testCountCode2')
+data.setCell(11, 2, 'StringTwoCountCodeTest')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testCountCode4')
+data.setCell(12, 2, 'StringTwoCountCodeTest')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testCountHiPositive')
+data.setCell(13, 2, 'StringTwoMethodsContHiTest')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testCountHiFourNegative')
+data.setCell(14, 2, 'StringTwoMethodsContHiTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testCountHiPositive')
+data.setCell(15, 2, 'StringTwoMethodsContHiTest')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testConCat4')
+data.setCell(16, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testCountHiPositive')
+data.setCell(17, 2, 'StringTwoMethodsContHiTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testCountCode2')
+data.setCell(18, 2, 'StringTwoCountCodeTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testCountHiPositive')
+data.setCell(19, 2, 'StringTwoMethodsContHiTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testCountHiPositive')
+data.setCell(20, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testCountCode')
+data.setCell(21, 2, 'StringTwoCountCodeTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testCountHiPositive')
+data.setCell(22, 2, 'StringTwoMethodsContHiTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testCountCode2')
+data.setCell(23, 2, 'StringTwoCountCodeTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testDoubleChar')
+data.setCell(24, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testConCat3')
+data.setCell(25, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testCountHiPositive')
+data.setCell(26, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testDoubleCharExpectedToFail')
+data.setCell(27, 2, 'StringTwoCountCodeTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testCountCode2')
+data.setCell(28, 2, 'StringTwoCountCodeTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testConCat')
+data.setCell(29, 2, 'StringTwoMethodsDoubleCharTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testCountHiPositive')
+data.setCell(30, 2, 'StringTwoMethodsContHiTest')
+data.setCell(30, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 ms</span>
+              <span class="suite-total-time">Total running time: 38 ms</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -361,49 +894,158 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">StringTwoMethodsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">StringTwoMethodsDoubleCharTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startRequiredClass</span>
-                <span class="method-start">12 ms</span>
+                <span class="method-start">17 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">StringTwoMethodsContHiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCountHi</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiFourNegative</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive(AHIBhiChi hi, 3)</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive(Ahi hi, 2)</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive( hi, 1)</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCountHiPositive( hi, 2)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive( hihi, 2)</span>
+                <span class="method-start">72 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive( hihihi hihihi hi, 7)</span>
+                <span class="method-start">72 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCountHiPositive( hihihi hihihi hi, 1)</span>
+                <span class="method-start">73 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive(Ahi hihihihhi, 5)</span>
+                <span class="method-start">75 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiTwoPositive</span>
+                <span class="method-start">75 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">StringTwoMethodsDoubleCharTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testConCat</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testConCat2</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testConCat3</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testConCat4</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive(hi, hhii)</span>
+                <span class="method-start">85 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive(step, sstteepp)</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive(the, tthhee)</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive(he, hhee)</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountHiPositive(hii, hhiiii)</span>
+                <span class="method-start">98 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleCharExpectedToFail</span>
+                <span class="method-start">101 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">StringTwoCountCodeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testCountCode</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-name">testCountCode2</span>
+                <span class="method-start">109 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCountCode2</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">109 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testCountCode3</span>
-                <span class="method-start">25 ms</span>
+                <span class="method-name">testCountCode2</span>
+                <span class="method-start">110 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testCountCode4</span>
-                <span class="method-start">26 ms</span>
+                <span class="method-name">testCountCode2</span>
+                <span class="method-start">110 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testDoubleCharExpectedToFail</span>
-                <span class="method-start">26 ms</span>
+                <span class="method-name">testCountCode2</span>
+                <span class="method-start">111 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">StringTwoMethodsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">StringTwoMethodsDoubleCharTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testDoubleChar</span>
-                <span class="method-start">27 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testDoubleCharExpectedToFail</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">113 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">AfterRequiredClass</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">114 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">StringTwoCountCodeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCountCode3</span>
+                <span class="method-start">114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountCode</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleCharExpectedToFail</span>
+                <span class="method-start">117 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCountCode4</span>
+                <span class="method-start">127 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
