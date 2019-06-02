@@ -11,6 +11,7 @@ public class ParametersData {
                         { "Ahi hi", 2 },
                         { " hi", 1 },
                         { " hi", 2 },
+                        { " hiahi", 2 },
                         { " hihi", 2 },
                         { " hihihi hihihi hi", 7 },
                         { " hihihi hihihi hi", 1 },
