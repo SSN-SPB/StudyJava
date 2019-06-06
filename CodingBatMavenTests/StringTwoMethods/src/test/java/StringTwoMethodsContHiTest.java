@@ -35,7 +35,7 @@ public class StringTwoMethodsContHiTest {
         StringTwoMethods countHi = new StringTwoMethods();
         Object countHiValue = countHi.countHi(testString) ;
         //Assert.assertEquals(countHiValue,resultValue);
-        System.out.println("Expected: " + countHiValue + "; Actual: " + resultValue);
+        System.out.println("Expected result: " + countHiValue + "; Actual: " + resultValue);
 
         try {
             Assert.assertEquals(countHiValue,resultValue, "TestResult:");
