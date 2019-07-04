@@ -21,7 +21,7 @@ public class StringTwoMethodsContHiTest {
 
         }
 
-    @Test
+    @Test (groups = "testCountHiFourNegative")
     public void testCountHiFourNegative() {
         StringTwoMethods countHi = new StringTwoMethods(); int countHiValue = countHi.countHi("AHIBhiChi hi eeehi") ;
         Assert.assertNotSame(countHiValue,5);

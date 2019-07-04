@@ -9,22 +9,23 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>StringTwoMethods</artifactId>
+    <artifactId>StringTwoMethodsCountHi</artifactId>
     <profiles>
         <profile>
-            <id>NotCountTwo</id>
+            <id>CountHi</id>
 
             <build>
-                <!--<directory>target/CountTwo</directory>-->
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>3.0.0-M1</version>
                         <configuration>
- <excludes>
+<!--<excludes>
      <exclude>StringTwoCountCodeTest.java</exclude>
- </excludes>
+     <exclude>StringTwoMethodsDoubleCharTest.java</exclude>
+     <exclude>StringTwoMethodsContHiTest.java</exclude>
+ </excludes>-->
                         </configuration>
                     </plugin>
                 </plugins>

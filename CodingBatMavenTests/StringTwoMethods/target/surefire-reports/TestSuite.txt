@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 31, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.367 sec <<< FAILURE!
-testCountHiPositive(StringTwoMethodsContHiTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+Tests run: 32, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.847 sec <<< FAILURE!
+testCountHiPositive(StringTwoMethodsContHiTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.fail(Assert.java:101)
 	at StringTwoMethodsContHiTest.testCountHiPositive(StringTwoMethodsContHiTest.java:47)
 
-testCountHiPositive(StringTwoMethodsContHiTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+testCountHiPositive(StringTwoMethodsContHiTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.fail(Assert.java:101)

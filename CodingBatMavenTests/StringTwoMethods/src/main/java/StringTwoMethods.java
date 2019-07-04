@@ -24,7 +24,7 @@ public class StringTwoMethods {
     countCode("cozexxcope") → 2*/
 
     public int countCode(String str) {
-        String findStr1 = "co";
+        String findStr1 = "coc";
         String findStr2 = "e";
         String findStr3="code";
         int lastIndex = 0;

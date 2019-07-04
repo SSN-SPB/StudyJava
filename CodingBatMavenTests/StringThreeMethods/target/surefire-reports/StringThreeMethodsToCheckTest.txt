@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: StringThreeMethodsToCheckTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.593 sec
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.698 sec <<< FAILURE!
+testWithoutString(StringThreeMethodsToCheckTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [abab] but found [abxxab]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at StringThreeMethodsToCheckTest.testWithoutString(StringThreeMethodsToCheckTest.java:24)
+
+testWithoutStringTwo(StringThreeMethodsToCheckTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [abab] but found [abxxab]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at StringThreeMethodsToCheckTest.testWithoutStringTwo(StringThreeMethodsToCheckTest.java:33)
+

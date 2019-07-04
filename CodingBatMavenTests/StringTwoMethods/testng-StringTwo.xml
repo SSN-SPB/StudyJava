@@ -13,7 +13,7 @@
 
       <classes>
          <class name = "StringTwoMethodsDoubleCharTest" />
-         <class name = "StringTwoMethodsDoubleCharTest" />
+         <!--<class name = "StringTwoMethodsDoubleCharTest" />-->
       </classes>
 
    </test>
