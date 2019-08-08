@@ -13,6 +13,11 @@
 
       <classes>
          <class name = "StringTwoMethodsDoubleCharTest" />
+          <class name="ArrayTwoMethodsTest">
+              <methods>
+                  <include name="testMatchUp1"/>
+              </methods>
+          </class> <!-- ArrayTwoMethodsTest -->
          <!--<class name = "StringTwoMethodsDoubleCharTest" />-->
       </classes>
 

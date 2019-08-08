@@ -13,6 +13,9 @@
         <module>StringTwoMethods</module>
         <module>ArrayTwo</module>
         <module>ArrayThree</module>
+        <module>CombinedCodingBatMavenModule</module>
+        <module>CucumberMavenModule</module>
+        <module>CucumberDentsplyTestsMavenModule</module>
     </modules>
 
     <dependencies>
@@ -28,7 +31,12 @@
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>4.7.0</version>
+        </dependency>
     </dependencies>
 <!--    <build>
         <plugins>
@@ -82,6 +90,7 @@
                         <configuration>
                             <includes>
                                 <include>StringThreeCountMethodsTest.java</include>
+                                <include>ArrayTwoMethodsTest.java</include>
                                 <!-- launch mvn install -P CountTwo from group 'StringTwoMethods' route <include></include>-->
                             </includes>
                         </configuration>

@@ -9,6 +9,9 @@
         <module name="ArrayThree" />
         <module name="ArrayTwo" />
         <module name="CodingBatMavenTests" />
+        <module name="CombinedCodingBatMavenModule" />
+        <module name="CucumberDentsplyTestsMavenModule" />
+        <module name="CucumberMavenModule" />
         <module name="group1CountCode" />
         <module name="StringThreeMethods" />
         <module name="StringTwoMethods" />
