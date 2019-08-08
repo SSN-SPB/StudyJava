@@ -9,6 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <info.cukes.version>1.2.5</info.cukes.version>
+    </properties>
+
     <artifactId>CucumberMavenModule</artifactId>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -22,7 +26,7 @@
             <dependency>
                 <groupId>info.cukes</groupId>
                 <artifactId>cucumber-testng</artifactId>
-                <version>1.2.5</version>
+                <version>${info.cukes.version}</version>
             </dependency>
         <dependency>
             <groupId>org.testng</groupId>
